@@ -3,17 +3,17 @@
 .MainProfilePage {
   section {
     width: dp(340);
-    padding: dp(30);
-    background-color: $color-white;
     margin: dp(50) auto;
-    box-shadow: $box-profile;
+    padding: dp(30);
     border-radius: dp(10);
+    background-color: $color-white;
+    box-shadow: $box-profile-main;
     nav.menu {
       width: 100%;
       &::after {
-        content: '';
         display: block;
         clear: both;
+        content: '';
       }
       a {
         font-size: dp(20);
@@ -24,6 +24,40 @@
         &:nth-of-type(2) {
           float: right;
         }
+      }
+    }
+    article.profile {
+      width: 100%;
+      text-align: center;
+      img {
+        width: dp(200);
+        height: dp(200);
+        margin-bottom: dp(20);
+        border-radius: 50%;
+        box-shadow: $box-profile;
+      }
+      h1 {
+        @include set-font-style(1, dp(22), normal, bold);
+        margin-bottom: dp(5);
+        color: $color-5;
+      }
+      h2 {
+        @include set-font-style(normal, dp(12), normal, bold);
+        margin-bottom: dp(30);
+        color: $color-b;
+      }
+      a.btnView {
+        @include set-font-style(dp(32), dp(10), normal, bold);
+        color: $color-white;
+        display: block;
+        width: dp(180);
+        height: dp(32);
+        margin: 0 auto dp(20);
+        background-color: $color-4;
+        border-radius: dp(16);
+        text-align: center;
+        background: $bg-color-linear-green;
+        box-shadow: $box-bg-color-linear-green;
       }
     }
   }
