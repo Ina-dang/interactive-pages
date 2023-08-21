@@ -1,0 +1,12 @@
+@import './common.scss';
+
+.MainProfilePage {
+  section {
+    width: dp(340);
+    padding: dp(30);
+    background-color: $color-white;
+    margin: dp(50) auto;
+    box-shadow: $box-profile;
+    border-radius: dp(10);
+  }
+}

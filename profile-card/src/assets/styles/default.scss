@@ -1,0 +1,49 @@
+@import './common.scss';
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+}
+
+#root {
+  height: 100%;
+}
+
+.Pages {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: dp(16);
+}
