@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import React from 'react'
+import { LiaBookmark, LiaBarsSolid } from 'react-icons/lia'
 
 const MainProfilePage = () => {
   const IECheck = navigator.userAgent
@@ -9,7 +10,16 @@ const MainProfilePage = () => {
   }
   return (
     <main className={classContainer}>
-      <section></section>
+      <section>
+        <nav className="menu">
+          <a href="#">
+            <LiaBarsSolid />
+          </a>
+          <a href="#">
+            <LiaBookmark />
+          </a>
+        </nav>
+      </section>
     </main>
   )
 }

@@ -8,5 +8,23 @@
     margin: dp(50) auto;
     box-shadow: $box-profile;
     border-radius: dp(10);
+    nav.menu {
+      width: 100%;
+      &::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      a {
+        font-size: dp(20);
+        color: $color-6;
+        &:nth-of-type(1) {
+          float: left;
+        }
+        &:nth-of-type(2) {
+          float: right;
+        }
+      }
+    }
   }
 }
