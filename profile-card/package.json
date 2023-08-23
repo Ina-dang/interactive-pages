@@ -1,37 +1,26 @@
 {
   "name": "profile-card",
-  "version": "1.0.0",
-  "description": "프로필 카드",
-  "main": "src/index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "react-scripts start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "Ina",
-  "license": "ISC",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0",
+    "@types/node": "20.5.3",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "classnames": "^2.3.2",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
     "sass": "^1.66.1",
-    "sass-loader": "^13.3.2"
-  },
-  "devDependencies": {
-    "eslint": "^8.47.0",
-    "eslint-plugin-react": "^7.33.2",
-    "prettier": "^3.0.2",
-    "prettier-eslint": "^15.0.1",
-    "react-scripts": "^5.0.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "sass-loader": "^13.3.2",
+    "typescript": "5.1.6"
   }
 }

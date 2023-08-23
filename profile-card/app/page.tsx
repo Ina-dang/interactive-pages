@@ -1,11 +1,10 @@
 import classNames from 'classnames'
-import React from 'react'
 import { LiaBookmark, LiaBarsSolid } from 'react-icons/lia'
-import { IMAGES } from '../assets'
+import Image from 'next/image'
 
-const MainProfilePage = () => {
-  const IECheck = navigator.userAgent
+export default function Home() {
   const classContainer = classNames('Pages MainProfilePage')
+  const IECheck = typeof window !== 'undefined' ? navigator.userAgent : ''
   if (/trudebt/i.test(IECheck)) {
     alert('익스플로러 브라우저로 접속하셨네요. 이 웹페이지는 익스플로러를 지원하지 않습니다.')
   }
@@ -21,7 +20,7 @@ const MainProfilePage = () => {
           </a>
         </nav>
         <article className="profile">
-          <img src={IMAGES.member1} alt="프로필 이미지" />
+          <Image src="/member1.png" alt="프로필 이미지" width={200} height={200} />
           <h1>Inadang</h1>
           <h2>Frontend Developer</h2>
 
@@ -33,5 +32,3 @@ const MainProfilePage = () => {
     </main>
   )
 }
-
-export { MainProfilePage }
